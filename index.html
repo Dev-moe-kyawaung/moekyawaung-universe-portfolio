@@ -1,0 +1,2798 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Moe Kyaw Aung - Universe of Portfolio. The ultimate showcase featuring cosmic animations, multiverse effects, and transcendent design">
+    <meta name="keywords" content="Universe Portfolio, Cosmic Design, Multiverse UI, Transcendent Developer, Ultimate Showcase">
+    <meta name="author" content="Moe Kyaw Aung">
+    <meta property="og:title" content="Moe Kyaw Aung - Universe of Portfolio">
+    <meta property="og:description" content="The Ultimate Portfolio Experience - Where Code Transcends Reality">
+    <meta property="og:image" content="https://res.cloudinary.com/dye5qpwii/image/upload/v1778527878/IMG_20260430_053105_uef0yr.png">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <title>⭐ MOE KYAW AUNG ⭐ UNIVERSE OF PORTFOLIO - ULTIMATE EDITION</title>
+    
+    <!-- Ultimate Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Pro -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <style>
+        /* ============================================================
+           UNIVERSE CSS VARIABLES - VERSION 6 ULTIMATE
+           ============================================================ */
+        :root {
+            /* Cosmic Gradient System */
+            --cosmic-primary: linear-gradient(135deg, #667eea 0%, #764ba2 25%, #f093fb 50%, #4facfe 75%, #00f2fe 100%);
+            --cosmic-secondary: linear-gradient(135deg, #fa709a 0%, #fee140 25%, #30cfd0 50%, #a8edea 75%, #fed6e3 100%);
+            --cosmic-accent: linear-gradient(135deg, #ff0080 0%, #ff8c00 25%, #40e0d0 50%, #9d50bb 75%, #6e48aa 100%);
+            --cosmic-gold: linear-gradient(135deg, #ffd700 0%, #ffed4e 25%, #ff00ff 50%, #00ffff 75%, #ffd700 100%);
+            --cosmic-rainbow: linear-gradient(135deg, #ff0000 0%, #ff7f00 14%, #ffff00 28%, #00ff00 42%, #0000ff 57%, #4b0082 71%, #9400d3 85%, #ff0000 100%);
+            
+            /* Universe Background */
+            --universe-black: #000000;
+            --universe-deep: #0a0a0f;
+            --universe-dark: #0f0f1e;
+            --universe-twilight: #1a1a2e;
+            
+            /* Stellar Colors */
+            --star-white: #ffffff;
+            --star-blue: #00d4ff;
+            --star-purple: #7b2ff7;
+            --star-pink: #f107a3;
+            --star-green: #00ffa3;
+            --star-gold: #ffd700;
+            
+            /* Nebula Effects */
+            --nebula-cyan: rgba(0, 212, 255, 0.4);
+            --nebula-purple: rgba(123, 47, 247, 0.4);
+            --nebula-pink: rgba(247, 7, 163, 0.4);
+            --nebula-green: rgba(0, 255, 163, 0.4);
+            
+            /* Glass Morphism Ultra */
+            --glass-cosmic: rgba(255, 255, 255, 0.02);
+            --glass-border: rgba(255, 255, 255, 0.1);
+            --glass-blur: blur(30px);
+            --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.8);
+            
+            /* 3D Depth Ultra */
+            --depth-near: translateZ(150px);
+            --depth-mid: translateZ(300px);
+            --depth-far: translateZ(500px);
+            --depth-universe: translateZ(1000px);
+            
+            /* Ultimate Animations */
+            --cosmic-ease: cubic-bezier(0.19, 1, 0.22, 1);
+            --universe-bounce: cubic-bezier(0.68, -1, 0.265, 2);
+            --stellar-elastic: cubic-bezier(0.68, -1.5, 0.265, 2.5);
+            
+            /* Spacing Universe */
+            --space-universe: clamp(12rem, 25vw, 20rem);
+            --space-cosmic: clamp(10rem, 20vw, 16rem);
+            --space-stellar: clamp(8rem, 15vw, 12rem);
+        }
+
+        /* ============================================================
+           ULTIMATE BASE RESET
+           ============================================================ */
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--universe-black);
+            color: var(--star-white);
+            line-height: 1.6;
+            overflow-x: hidden;
+            position: relative;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* Universe Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--universe-black);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--cosmic-primary);
+            border-radius: 10px;
+            box-shadow: 0 0 30px rgba(102, 126, 234, 0.8), 0 0 60px rgba(102, 126, 234, 0.6);
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--cosmic-rainbow);
+            box-shadow: 0 0 50px rgba(255, 255, 255, 0.9);
+        }
+
+        /* ============================================================
+           COSMIC PRELOADER - Universe Vortex
+           ============================================================ */
+        .cosmic-preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at center, #1a1a2e 0%, #000000 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 10001;
+            transition: opacity 1.5s ease, visibility 1.5s ease;
+        }
+
+        .cosmic-preloader.hidden {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .universe-vortex {
+            position: relative;
+            width: 300px;
+            height: 300px;
+        }
+
+        .vortex-ring {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border: 4px solid transparent;
+            border-radius: 50%;
+            animation: vortexSpin 4s cubic-bezier(0.68, -0.55, 0.265, 1.55) infinite;
+        }
+
+        .vortex-ring:nth-child(1) {
+            border-top-color: #667eea;
+            border-right-color: #764ba2;
+            animation-delay: 0s;
+            box-shadow: 0 0 50px #667eea, inset 0 0 50px #667eea;
+        }
+
+        .vortex-ring:nth-child(2) {
+            width: 85%;
+            height: 85%;
+            top: 7.5%;
+            left: 7.5%;
+            border-top-color: #f093fb;
+            border-right-color: #4facfe;
+            animation-delay: -0.5s;
+            box-shadow: 0 0 50px #f093fb, inset 0 0 50px #f093fb;
+        }
+
+        .vortex-ring:nth-child(3) {
+            width: 70%;
+            height: 70%;
+            top: 15%;
+            left: 15%;
+            border-top-color: #00f2fe;
+            border-right-color: #fa709a;
+            animation-delay: -1s;
+            box-shadow: 0 0 50px #00f2fe, inset 0 0 50px #00f2fe;
+        }
+
+        .vortex-ring:nth-child(4) {
+            width: 55%;
+            height: 55%;
+            top: 22.5%;
+            left: 22.5%;
+            border-top-color: #fee140;
+            border-right-color: #30cfd0;
+            animation-delay: -1.5s;
+            box-shadow: 0 0 50px #fee140, inset 0 0 50px #fee140;
+        }
+
+        .vortex-ring:nth-child(5) {
+            width: 40%;
+            height: 40%;
+            top: 30%;
+            left: 30%;
+            border-top-color: #a8edea;
+            border-right-color: #fed6e3;
+            animation-delay: -2s;
+            box-shadow: 0 0 50px #a8edea, inset 0 0 50px #a8edea;
+        }
+
+        .vortex-ring:nth-child(6) {
+            width: 25%;
+            height: 25%;
+            top: 37.5%;
+            left: 37.5%;
+            border-top-color: #ff0080;
+            border-right-color: #ff8c00;
+            animation-delay: -2.5s;
+            box-shadow: 0 0 50px #ff0080, inset 0 0 50px #ff0080;
+        }
+
+        @keyframes vortexSpin {
+            0% { transform: rotate(0deg) scale(1); }
+            50% { transform: rotate(180deg) scale(1.15); }
+            100% { transform: rotate(360deg) scale(1); }
+        }
+
+        .universe-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-family: 'Orbitron', sans-serif;
+            font-size: 3rem;
+            font-weight: 900;
+            background: var(--cosmic-rainbow);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            background-size: 200% auto;
+            animation: rainbowShift 3s linear infinite, cosmicPulse 2s ease-in-out infinite;
+            letter-spacing: 8px;
+            text-transform: uppercase;
+        }
+
+        @keyframes rainbowShift {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 200% 50%; }
+        }
+
+        @keyframes cosmicPulse {
+            0%, 100% { opacity: 1; transform: translate(-50%, -50%) scale(1); text-shadow: 0 0 30px rgba(255, 255, 255, 0.8); }
+            50% { opacity: 0.8; transform: translate(-50%, -50%) scale(1.1); text-shadow: 0 0 60px rgba(255, 255, 255, 1); }
+        }
+
+        /* ============================================================
+           COSMIC CURSOR - Multiverse Tracker
+           ============================================================ */
+        .cosmic-cursor {
+            width: 80px;
+            height: 80px;
+            position: fixed;
+            pointer-events: none;
+            z-index: 9999;
+            transition: all 0.12s cubic-bezier(0.19, 1, 0.22, 1);
+            transform: translate(-50%, -50%);
+        }
+
+        .cursor-core {
+            width: 100%;
+            height: 100%;
+            border: 3px solid transparent;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(102, 126, 234, 0.4), transparent);
+            backdrop-filter: blur(10px);
+            position: relative;
+            box-shadow: 0 0 40px rgba(102, 126, 234, 0.6), inset 0 0 40px rgba(102, 126, 234, 0.3);
+        }
+
+        .cursor-core::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 200%;
+            height: 200%;
+            border: 2px solid transparent;
+            border-top-color: #667eea;
+            border-right-color: #f093fb;
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            animation: cursorOrbit 3s linear infinite;
+        }
+
+        .cursor-core::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 150%;
+            height: 150%;
+            border: 2px solid transparent;
+            border-bottom-color: #00f2fe;
+            border-left-color: #fa709a;
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            animation: cursorOrbit 2s linear infinite reverse;
+        }
+
+        @keyframes cursorOrbit {
+            0% { transform: translate(-50%, -50%) rotate(0deg); }
+            100% { transform: translate(-50%, -50%) rotate(360deg); }
+        }
+
+        .cursor-dot {
+            width: 16px;
+            height: 16px;
+            background: radial-gradient(circle, #ffffff, #00d4ff);
+            border-radius: 50%;
+            position: fixed;
+            pointer-events: none;
+            z-index: 10000;
+            transform: translate(-50%, -50%);
+            box-shadow: 0 0 30px #00d4ff, 0 0 60px #00d4ff, 0 0 90px #00d4ff;
+            transition: all 0.08s ease;
+        }
+
+        .cosmic-cursor.active {
+            width: 100px;
+            height: 100px;
+        }
+
+        .cosmic-cursor.active .cursor-core {
+            background: radial-gradient(circle, rgba(247, 7, 163, 0.5), transparent);
+            box-shadow: 0 0 60px rgba(247, 7, 163, 0.8), inset 0 0 60px rgba(247, 7, 163, 0.5);
+        }
+
+        /* ============================================================
+           UNIVERSE NAVIGATION - Floating Cosmic
+           ============================================================ */
+        .universe-nav {
+            position: fixed;
+            top: 25px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 92%;
+            max-width: 1400px;
+            background: var(--glass-cosmic);
+            backdrop-filter: var(--glass-blur);
+            -webkit-backdrop-filter: var(--glass-blur);
+            border: 1px solid var(--glass-border);
+            border-radius: 60px;
+            z-index: 1000;
+            transition: all 0.8s var(--cosmic-ease);
+            box-shadow: var(--glass-shadow);
+            padding: 1rem 3rem;
+        }
+
+        .universe-nav.scrolled {
+            background: rgba(0, 0, 0, 0.95);
+            box-shadow: 
+                0 10px 100px rgba(102, 126, 234, 0.4),
+                0 0 150px rgba(247, 7, 163, 0.3),
+                inset 0 1px 0 rgba(255, 255, 255, 0.1);
+            border-color: rgba(102, 126, 234, 0.5);
+        }
+
+        .nav-container-universe {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-logo-universe {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2.2rem;
+            font-weight: 900;
+            background: var(--cosmic-rainbow);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            background-size: 200% auto;
+            text-decoration: none;
+            position: relative;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            animation: rainbowShift 4s linear infinite;
+        }
+
+        .nav-logo-universe::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 0;
+            height: 4px;
+            background: var(--cosmic-primary);
+            transition: width 0.6s var(--cosmic-ease);
+            box-shadow: 0 0 20px rgba(102, 126, 234, 1);
+            border-radius: 2px;
+        }
+
+        .nav-logo-universe:hover::after {
+            width: 100%;
+        }
+
+        .nav-menu-universe {
+            display: flex;
+            list-style: none;
+            gap: 1.5rem;
+            align-items: center;
+        }
+
+        .nav-link-universe {
+            color: var(--star-white);
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.05rem;
+            padding: 1rem 2.2rem;
+            border-radius: 40px;
+            transition: all 0.5s var(--cosmic-ease);
+            position: relative;
+            overflow: hidden;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+
+        .nav-link-universe::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(102, 126, 234, 0.4), transparent);
+            transition: left 0.8s;
+        }
+
+        .nav-link-universe:hover::before {
+            left: 100%;
+        }
+
+        .nav-link-universe:hover {
+            color: #00d4ff;
+            background: rgba(102, 126, 234, 0.2);
+            box-shadow: 0 0 40px rgba(102, 126, 234, 0.5);
+            transform: translateY(-3px);
+        }
+
+        .theme-toggle-universe {
+            background: var(--glass-cosmic);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            color: var(--star-white);
+            padding: 1rem 1.8rem;
+            border-radius: 40px;
+            cursor: pointer;
+            transition: all 0.5s var(--cosmic-ease);
+            font-size: 1.3rem;
+        }
+
+        .theme-toggle-universe:hover {
+            background: var(--cosmic-primary);
+            transform: rotate(180deg) scale(1.15);
+            box-shadow: 0 0 50px rgba(102, 126, 234, 0.8);
+        }
+
+        .menu-toggle-universe {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 7px;
+        }
+
+        .menu-toggle-universe span {
+            width: 32px;
+            height: 4px;
+            background: var(--cosmic-rainbow);
+            background-size: 200% auto;
+            transition: all 0.5s var(--cosmic-ease);
+            border-radius: 4px;
+            box-shadow: 0 0 15px rgba(102, 126, 234, 0.8);
+            animation: rainbowShift 3s linear infinite;
+        }
+
+        /* ============================================================
+           UNIVERSE HERO - Cosmic Stage
+           ============================================================ */
+        .universe-hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            padding-top: 120px;
+            perspective: 2500px;
+        }
+
+        /* Starfield Background */
+        .starfield {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: 0;
+        }
+
+        .star {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background: white;
+            border-radius: 50%;
+            box-shadow: 0 0 4px white;
+            animation: starTwinkle 3s ease-in-out infinite;
+        }
+
+        @keyframes starTwinkle {
+            0%, 100% { opacity: 0.3; }
+            50% { opacity: 1; }
+        }
+
+        /* Nebula Clouds */
+        .nebula-cloud {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(80px);
+            opacity: 0.4;
+            animation: nebulaFloat 20s ease-in-out infinite;
+        }
+
+        .nebula-1 {
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, var(--nebula-cyan), transparent);
+            top: 10%;
+            left: 10%;
+            animation-delay: 0s;
+        }
+
+        .nebula-2 {
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, var(--nebula-purple), transparent);
+            top: 50%;
+            right: 15%;
+            animation-delay: -5s;
+        }
+
+        .nebula-3 {
+            width: 550px;
+            height: 550px;
+            background: radial-gradient(circle, var(--nebula-pink), transparent);
+            bottom: 15%;
+            left: 50%;
+            animation-delay: -10s;
+        }
+
+        @keyframes nebulaFloat {
+            0%, 100% {
+                transform: translate(0, 0) scale(1);
+            }
+            33% {
+                transform: translate(50px, -50px) scale(1.1);
+            }
+            66% {
+                transform: translate(-30px, 40px) scale(0.95);
+            }
+        }
+
+        /* Cosmic Particles */
+        .cosmic-particles {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .cosmic-particle {
+            position: absolute;
+            width: 3px;
+            height: 3px;
+            background: linear-gradient(135deg, #00d4ff, #f107a3);
+            border-radius: 50%;
+            box-shadow: 0 0 15px currentColor;
+            animation: particleOrbit 20s linear infinite;
+            opacity: 0.7;
+        }
+
+        @keyframes particleOrbit {
+            0% {
+                transform: translate3d(0, 100vh, 0);
+                opacity: 0;
+            }
+            10% {
+                opacity: 0.7;
+            }
+            90% {
+                opacity: 0.7;
+            }
+            100% {
+                transform: translate3d(150px, -100vh, 300px);
+                opacity: 0;
+            }
+        }
+
+        /* Cosmic Rings */
+        .cosmic-rings {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 1200px;
+            height: 1200px;
+            z-index: 0;
+        }
+
+        .cosmic-ring {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border: 2px solid transparent;
+            border-radius: 50%;
+            animation: cosmicRingRotate 30s linear infinite;
+        }
+
+        .cosmic-ring:nth-child(1) {
+            width: 100%;
+            height: 100%;
+            border-top-color: rgba(102, 126, 234, 0.3);
+            border-right-color: rgba(247, 7, 163, 0.3);
+            animation-delay: 0s;
+        }
+
+        .cosmic-ring:nth-child(2) {
+            width: 80%;
+            height: 80%;
+            border-bottom-color: rgba(0, 242, 254, 0.3);
+            border-left-color: rgba(250, 112, 154, 0.3);
+            animation-delay: -10s;
+        }
+
+        .cosmic-ring:nth-child(3) {
+            width: 60%;
+            height: 60%;
+            border-top-color: rgba(254, 225, 64, 0.3);
+            border-right-color: rgba(48, 207, 208, 0.3);
+            animation-delay: -20s;
+        }
+
+        @keyframes cosmicRingRotate {
+            0% { transform: translate(-50%, -50%) rotate(0deg); }
+            100% { transform: translate(-50%, -50%) rotate(360deg); }
+        }
+
+        /* Hero Content */
+        .hero-content-universe {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            max-width: 1500px;
+            padding: 2rem;
+            transform-style: preserve-3d;
+        }
+
+        /* Universe Badge */
+        .universe-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 1.5rem;
+            background: var(--glass-cosmic);
+            backdrop-filter: blur(30px);
+            border: 1px solid var(--glass-border);
+            padding: 1.3rem 3.5rem;
+            border-radius: 60px;
+            font-size: 1.15rem;
+            font-weight: 800;
+            margin-bottom: 3.5rem;
+            animation: slideDownUniverse 2s var(--cosmic-ease), floatUniverse 6s ease-in-out infinite 2s;
+            font-family: 'Exo 2', sans-serif;
+            letter-spacing: 3px;
+            box-shadow: 
+                0 20px 60px rgba(102, 126, 234, 0.4),
+                inset 0 2px 0 rgba(255, 255, 255, 0.2);
+            position: relative;
+            overflow: hidden;
+            text-transform: uppercase;
+        }
+
+        .universe-badge::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -200%;
+            width: 200%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+            animation: shimmerUniverse 5s infinite;
+        }
+
+        @keyframes shimmerUniverse {
+            0% { left: -200%; }
+            100% { left: 200%; }
+        }
+
+        @keyframes slideDownUniverse {
+            from {
+                opacity: 0;
+                transform: translateY(-100px) scale(0.6) translateZ(-150px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1) translateZ(0);
+            }
+        }
+
+        @keyframes floatUniverse {
+            0%, 100% { transform: translateY(0) translateZ(0) rotateX(0deg); }
+            50% { transform: translateY(-25px) translateZ(30px) rotateX(5deg); }
+        }
+
+        .badge-cosmic-pulse {
+            width: 18px;
+            height: 18px;
+            background: radial-gradient(circle, #00ffa3, #00d4ff);
+            border-radius: 50%;
+            box-shadow: 
+                0 0 30px #00ffa3, 
+                0 0 60px #00ffa3,
+                0 0 90px #00ffa3;
+            animation: pulseCosmicDot 3s ease-in-out infinite;
+            position: relative;
+        }
+
+        @keyframes pulseCosmicDot {
+            0%, 100% { 
+                transform: scale(1); 
+                opacity: 1; 
+                box-shadow: 0 0 30px #00ffa3; 
+            }
+            50% { 
+                transform: scale(1.6); 
+                opacity: 0.6; 
+                box-shadow: 0 0 60px #00ffa3, 0 0 120px #00ffa3; 
+            }
+        }
+
+        /* Universe Title - 3D Cosmic Effect */
+        .hero-title-universe {
+            font-family: 'Orbitron', sans-serif;
+            font-size: clamp(4.5rem, 14vw, 11rem);
+            font-weight: 900;
+            margin-bottom: 3rem;
+            line-height: 0.95;
+            animation: fadeInUpUniverse 2s var(--cosmic-ease) 0.3s backwards;
+            letter-spacing: -4px;
+            position: relative;
+        }
+
+        .title-universe-3d {
+            background: var(--cosmic-rainbow);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            display: inline-block;
+            position: relative;
+            animation: 
+                rainbowShift 5s linear infinite,
+                titleUniverse3DFloat 10s ease-in-out infinite;
+            text-shadow: 
+                0 0 100px rgba(102, 126, 234, 0.8),
+                0 0 150px rgba(247, 7, 163, 0.6);
+        }
+
+        .title-universe-3d::before {
+            content: attr(data-text);
+            position: absolute;
+            top: 0;
+            left: 0;
+                        z-index: -1;
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.5), rgba(247, 7, 163, 0.5));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            transform: translate(12px, 12px);
+            filter: blur(4px);
+        }
+
+        .title-universe-3d::after {
+            content: attr(data-text);
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -2;
+            background: linear-gradient(135deg, rgba(0, 242, 254, 0.4), rgba(250, 112, 154, 0.4));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            transform: translate(24px, 24px);
+            filter: blur(8px);
+        }
+
+        @keyframes titleUniverse3DFloat {
+            0%, 100% {
+                transform: translateY(0) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+            }
+            20% {
+                transform: translateY(-20px) rotateX(5deg) rotateY(-8deg) rotateZ(2deg);
+            }
+            40% {
+                transform: translateY(10px) rotateX(-3deg) rotateY(8deg) rotateZ(-2deg);
+            }
+            60% {
+                transform: translateY(-15px) rotateX(4deg) rotateY(-5deg) rotateZ(3deg);
+            }
+            80% {
+                transform: translateY(5px) rotateX(-4deg) rotateY(5deg) rotateZ(-3deg);
+            }
+        }
+
+        @keyframes fadeInUpUniverse {
+            from {
+                opacity: 0;
+                transform: translateY(80px) translateZ(-200px) rotateX(-20deg);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0) translateZ(0) rotateX(0);
+            }
+        }
+
+        /* Universe Subtitle - Morphing Cosmic Text */
+        .hero-subtitle-universe {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 800;
+            color: rgba(255, 255, 255, 0.95);
+            margin-bottom: 2.5rem;
+            font-family: 'Rajdhani', sans-serif;
+            animation: fadeInUpUniverse 2s var(--cosmic-ease) 0.6s backwards;
+            position: relative;
+        }
+
+        .morphing-cosmic-text {
+            position: relative;
+            display: inline-block;
+            background: var(--cosmic-primary);
+            background-size: 400% 100%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: morphingCosmicGradient 10s ease-in-out infinite;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        @keyframes morphingCosmicGradient {
+            0%, 100% { background-position: 0% 50%; }
+            25% { background-position: 100% 50%; }
+            50% { background-position: 200% 50%; }
+            75% { background-position: 300% 50%; }
+        }
+
+        /* Location with Cosmic Pin */
+        .hero-location-universe {
+            font-size: 1.4rem;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 4rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1.2rem;
+            animation: fadeInUpUniverse 2s var(--cosmic-ease) 0.9s backwards;
+            font-weight: 600;
+        }
+
+        .location-pin-universe {
+            color: #f107a3;
+            animation: bounceCosmicPin 3s ease-in-out infinite;
+            font-size: 1.8rem;
+            filter: drop-shadow(0 0 15px #f107a3);
+        }
+
+        @keyframes bounceCosmicPin {
+            0%, 100% { transform: translateY(0) scale(1); }
+            50% { transform: translateY(-15px) scale(1.2); }
+        }
+
+        /* Description */
+        .hero-desc-universe {
+            font-size: 1.4rem;
+            color: rgba(255, 255, 255, 0.85);
+            max-width: 1000px;
+            margin: 0 auto 5rem;
+            line-height: 2.1;
+            animation: fadeInUpUniverse 2s var(--cosmic-ease) 1.2s backwards;
+            font-weight: 400;
+        }
+
+        /* Universe Statistics - Holographic Cards */
+        .hero-stats-universe {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 3.5rem;
+            margin: 6rem auto;
+            max-width: 1200px;
+            animation: fadeInUpUniverse 2s var(--cosmic-ease) 1.5s backwards;
+        }
+
+        .stat-card-universe {
+            background: var(--glass-cosmic);
+            backdrop-filter: blur(30px);
+            border: 1px solid var(--glass-border);
+            border-radius: 35px;
+            padding: 3.5rem 3rem;
+            transition: all 0.8s var(--cosmic-ease);
+            position: relative;
+            overflow: hidden;
+            transform-style: preserve-3d;
+            cursor: pointer;
+        }
+
+        .stat-card-universe::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: conic-gradient(
+                from 0deg,
+                transparent,
+                rgba(102, 126, 234, 0.5),
+                transparent 30%,
+                rgba(247, 7, 163, 0.5),
+                transparent 60%,
+                rgba(0, 242, 254, 0.5),
+                transparent 90%
+            );
+            animation: rotateConicUniverse 10s linear infinite;
+            opacity: 0;
+        }
+
+        @keyframes rotateConicUniverse {
+            100% { transform: rotate(360deg); }
+        }
+
+        .stat-card-universe:hover {
+            transform: translateY(-30px) scale(1.08) rotateX(10deg) rotateY(10deg);
+            box-shadow: 
+                0 50px 150px rgba(102, 126, 234, 0.7),
+                0 0 120px rgba(247, 7, 163, 0.5),
+                inset 0 2px 0 rgba(255, 255, 255, 0.3);
+            border-color: rgba(102, 126, 234, 0.8);
+        }
+
+        .stat-card-universe:hover::before {
+            opacity: 1;
+        }
+
+        .stat-number-universe {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 4.5rem;
+            font-weight: 900;
+            background: var(--cosmic-primary);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            display: block;
+            position: relative;
+            z-index: 1;
+            text-shadow: 0 0 50px rgba(102, 126, 234, 0.8);
+            line-height: 1;
+            margin-bottom: 1.5rem;
+            animation: rainbowShift 4s linear infinite;
+        }
+
+        .stat-label-universe {
+            font-size: 1.15rem;
+            color: rgba(255, 255, 255, 0.9);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-top: 1rem;
+            position: relative;
+            z-index: 1;
+            font-weight: 800;
+        }
+
+        /* Universe Buttons - Holographic */
+        .hero-buttons-universe {
+            display: flex;
+            gap: 3rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 6rem;
+            animation: fadeInUpUniverse 2s var(--cosmic-ease) 1.8s backwards;
+        }
+
+        .btn-universe {
+            padding: 1.8rem 4.5rem;
+            font-size: 1.3rem;
+            font-weight: 900;
+            border-radius: 60px;
+            text-decoration: none;
+            transition: all 0.8s var(--cosmic-ease);
+            font-family: 'Rajdhani', sans-serif;
+            letter-spacing: 2px;
+            position: relative;
+            overflow: hidden;
+            display: inline-flex;
+            align-items: center;
+            gap: 1.5rem;
+            text-transform: uppercase;
+            transform-style: preserve-3d;
+        }
+
+        .btn-primary-universe {
+            background: var(--cosmic-primary);
+            background-size: 200% auto;
+            color: white;
+            border: none;
+            box-shadow: 
+                0 25px 70px rgba(102, 126, 234, 0.7),
+                0 0 50px rgba(123, 47, 247, 0.5),
+                inset 0 3px 0 rgba(255, 255, 255, 0.4);
+            animation: rainbowShift 4s linear infinite;
+        }
+
+        .btn-primary-universe::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -150%;
+            width: 150%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.6), transparent);
+            transition: left 0.8s;
+        }
+
+        .btn-primary-universe:hover {
+            transform: translateY(-10px) scale(1.12) rotateY(-8deg);
+            box-shadow: 
+                0 40px 110px rgba(102, 126, 234, 0.9),
+                0 0 80px rgba(123, 47, 247, 0.7),
+                inset 0 3px 0 rgba(255, 255, 255, 0.5);
+        }
+
+        .btn-primary-universe:hover::before {
+            left: 150%;
+        }
+
+        .btn-secondary-universe {
+            background: transparent;
+            color: var(--star-white);
+            border: 3px solid var(--glass-border);
+            backdrop-filter: blur(20px);
+            box-shadow: inset 0 0 40px rgba(102, 126, 234, 0.2);
+        }
+
+        .btn-secondary-universe:hover {
+            background: var(--cosmic-secondary);
+            background-size: 200% auto;
+            border-color: #00d4ff;
+            transform: translateY(-10px) scale(1.12) rotateY(8deg);
+            box-shadow: 
+                0 40px 100px rgba(0, 212, 255, 0.6),
+                inset 0 0 50px rgba(0, 212, 255, 0.4);
+            animation: rainbowShift 4s linear infinite;
+        }
+
+        /* Social Icons - Cosmic Orbital */
+        .hero-socials-universe {
+            display: flex;
+            gap: 2.5rem;
+            justify-content: center;
+            margin-top: 6rem;
+            flex-wrap: wrap;
+            animation: fadeInUpUniverse 2s var(--cosmic-ease) 2.1s backwards;
+        }
+
+        .social-icon-universe {
+            width: 80px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--glass-cosmic);
+            backdrop-filter: blur(30px);
+            border: 2px solid var(--glass-border);
+            border-radius: 50%;
+            color: var(--star-white);
+            font-size: 2rem;
+            transition: all 0.8s var(--cosmic-ease);
+            text-decoration: none;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.5);
+        }
+
+        .social-icon-universe::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--cosmic-rainbow);
+            background-size: 200% auto;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+            animation: rainbowShift 3s linear infinite;
+        }
+
+        .social-icon-universe:hover {
+            transform: translateY(-15px) scale(1.3) rotateY(360deg);
+            box-shadow: 
+                0 35px 80px rgba(102, 126, 234, 0.7),
+                0 0 60px rgba(0, 212, 255, 0.6);
+            border-color: #00d4ff;
+        }
+
+        .social-icon-universe:hover::before {
+            opacity: 0.4;
+        }
+
+        .social-icon-universe i {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Scroll Indicator - Cosmic Style */
+        .scroll-indicator-universe {
+            position: absolute;
+            bottom: 60px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.2rem;
+            animation: fadeInUpUniverse 2s var(--cosmic-ease) 2.4s backwards;
+        }
+
+        .scroll-text-universe {
+            font-size: 0.95rem;
+            color: rgba(255, 255, 255, 0.7);
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            font-weight: 800;
+        }
+
+        .scroll-line-universe {
+            width: 3px;
+            height: 80px;
+            background: linear-gradient(180deg, var(--cosmic-primary), transparent);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .scroll-line-universe::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 50px;
+            background: linear-gradient(180deg, #00d4ff, transparent);
+            animation: scrollDownUniverse 3s ease-in-out infinite;
+        }
+
+        @keyframes scrollDownUniverse {
+            0% { transform: translateY(-50px); opacity: 0; }
+            50% { opacity: 1; }
+            100% { transform: translateY(80px); opacity: 0; }
+        }
+
+        /* ============================================================
+           UNIVERSE SECTION SEPARATOR
+           ============================================================ */
+        .section-sep-universe {
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--cosmic-primary), transparent);
+            margin: var(--space-cosmic) auto;
+            max-width: 80%;
+            position: relative;
+        }
+
+        .section-sep-universe::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 20px;
+            height: 20px;
+            background: radial-gradient(circle, #00d4ff, transparent);
+            border-radius: 50%;
+            box-shadow: 
+                0 0 40px #00d4ff, 
+                0 0 80px #00d4ff,
+                0 0 120px #00d4ff;
+            animation: pulseGlowUniverse 3s ease-in-out infinite;
+        }
+
+        @keyframes pulseGlowUniverse {
+            0%, 100% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
+            50% { transform: translate(-50%, -50%) scale(2.5); opacity: 0.4; }
+        }
+
+        /* ============================================================
+           UNIVERSE SECTIONS
+           ============================================================ */
+        .section-universe {
+            padding: var(--space-stellar) 2rem;
+            max-width: 1500px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .section-label-universe {
+            font-family: 'Exo 2', sans-serif;
+            font-size: 1rem;
+            color: #00d4ff;
+            text-transform: uppercase;
+            letter-spacing: 6px;
+            margin-bottom: 2.5rem;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2.5rem;
+            font-weight: 800;
+        }
+
+        .section-label-universe::before,
+        .section-label-universe::after {
+            content: '';
+            width: 70px;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, #00d4ff, transparent);
+            box-shadow: 0 0 15px #00d4ff;
+        }
+
+        .section-title-universe {
+            font-family: 'Orbitron', sans-serif;
+            font-size: clamp(4rem, 8vw, 7rem);
+            font-weight: 900;
+            text-align: center;
+            margin-bottom: 3rem;
+            background: var(--cosmic-rainbow);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1.1;
+            letter-spacing: -3px;
+            animation: rainbowShift 5s linear infinite;
+        }
+
+        .section-desc-universe {
+            text-align: center;
+            max-width: 1000px;
+            margin: 0 auto 7rem;
+            color: rgba(255, 255, 255, 0.85);
+            font-size: 1.4rem;
+            line-height: 2.2;
+            font-weight: 400;
+        }
+
+        /* ============================================================
+           UNIVERSE PROJECTS - Holographic Cards
+           ============================================================ */
+        .projects-grid-universe {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            gap: 5rem;
+            margin-top: 8rem;
+        }
+
+        .project-card-universe {
+            background: var(--glass-cosmic);
+            backdrop-filter: blur(30px);
+            border: 2px solid var(--glass-border);
+            border-radius: 50px;
+            padding: 5rem;
+            transition: all 1s var(--cosmic-ease);
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            transform-style: preserve-3d;
+        }
+
+        .project-card-universe::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -150%;
+            width: 150%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(102, 126, 234, 0.3), transparent);
+            transition: left 1.2s ease;
+        }
+
+        .project-card-universe:hover::before {
+            left: 150%;
+        }
+
+        .project-card-universe:hover {
+            transform: translateY(-35px) scale(1.05) rotateX(8deg);
+            box-shadow: 
+                0 60px 160px rgba(102, 126, 234, 0.7),
+                0 0 120px rgba(247, 7, 163, 0.5),
+                inset 0 2px 0 rgba(255, 255, 255, 0.3);
+            border-color: rgba(102, 126, 234, 0.8);
+        }
+
+        .project-icon-universe {
+            font-size: 6rem;
+            margin-bottom: 3rem;
+            display: inline-block;
+            transition: all 1s var(--cosmic-ease);
+            filter: drop-shadow(0 0 40px rgba(102, 126, 234, 0.8));
+        }
+
+        .project-card-universe:hover .project-icon-universe {
+            transform: scale(1.4) rotateY(360deg) translateZ(80px);
+            filter: drop-shadow(0 0 60px rgba(102, 126, 234, 1));
+        }
+
+        .project-title-universe {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 3rem;
+            font-weight: 900;
+            background: var(--cosmic-primary);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 2.5rem;
+            line-height: 1.2;
+            animation: rainbowShift 4s linear infinite;
+        }
+
+        .project-desc-universe {
+            color: rgba(255, 255, 255, 0.85);
+            line-height: 2;
+            margin-bottom: 3rem;
+            font-size: 1.2rem;
+        }
+
+        .project-tags-universe {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin-top: 3rem;
+        }
+
+        .project-tag-universe {
+            background: rgba(0, 212, 255, 0.25);
+            border: 2px solid rgba(0, 212, 255, 0.5);
+            padding: 0.8rem 2rem;
+            border-radius: 30px;
+            font-size: 1rem;
+            color: #00d4ff;
+            font-weight: 800;
+            transition: all 0.5s var(--cosmic-ease);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .project-tag-universe:hover {
+            background: rgba(0, 212, 255, 0.5);
+            transform: scale(1.2) translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 212, 255, 0.5);
+        }
+
+        .project-link-universe {
+            display: inline-flex;
+            align-items: center;
+            gap: 1.2rem;
+            color: #00d4ff;
+            text-decoration: none;
+            font-weight: 900;
+            font-size: 1.3rem;
+            transition: all 0.5s var(--cosmic-ease);
+            margin-top: 2.5rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+
+        .project-link-universe:hover {
+            gap: 2.5rem;
+            color: #f107a3;
+            transform: translateX(10px);
+        }
+
+        /* ============================================================
+           UNIVERSE FOOTER
+           ============================================================ */
+        .footer-universe {
+            background: var(--universe-dark);
+            border-top: 2px solid var(--glass-border);
+            padding: 10rem 2rem 4rem;
+            margin-top: var(--space-universe);
+            position: relative;
+        }
+
+        .footer-universe::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: var(--cosmic-rainbow);
+            background-size: 200% auto;
+            box-shadow: 0 0 40px rgba(102, 126, 234, 0.8);
+            animation: rainbowShift 5s linear infinite;
+        }
+
+        .footer-grid-universe {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 6rem;
+            max-width: 1500px;
+            margin: 0 auto 6rem;
+        }
+
+        .footer-column-universe h4 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2.2rem;
+            font-weight: 900;
+            background: var(--cosmic-primary);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 3rem;
+            animation: rainbowShift 4s linear infinite;
+        }
+
+        .footer-column-universe p {
+            color: rgba(255, 255, 255, 0.75);
+            line-height: 2.2;
+            margin-bottom: 3rem;
+            font-size: 1.15rem;
+        }
+
+        .footer-links-universe {
+            list-style: none;
+        }
+
+        .footer-links-universe li {
+            margin-bottom: 1.8rem;
+        }
+
+        .footer-links-universe a {
+            color: rgba(255, 255, 255, 0.75);
+            text-decoration: none;
+            transition: all 0.5s var(--cosmic-ease);
+            display: inline-flex;
+            align-items: center;
+            gap: 1.2rem;
+            font-size: 1.15rem;
+        }
+
+        .footer-links-universe a:hover {
+            color: #00d4ff;
+            transform: translateX(20px);
+        }
+
+        .footer-socials-universe {
+            display: flex;
+            gap: 2.5rem;
+            flex-wrap: wrap;
+        }
+
+        .footer-social-icon-universe {
+            width: 70px;
+            height: 70px;
+            background: var(--glass-cosmic);
+            backdrop-filter: blur(20px);
+            border: 2px solid var(--glass-border);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--star-white);
+            text-decoration: none;
+            font-size: 1.8rem;
+            transition: all 0.8s var(--universe-bounce);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+        }
+
+        .footer-social-icon-universe:hover {
+            background: var(--cosmic-rainbow);
+            background-size: 200% auto;
+            color: white;
+            transform: translateY(-15px) rotate(360deg) scale(1.3);
+            box-shadow: 
+                0 40px 90px rgba(102, 126, 234, 0.7),
+                0 0 70px rgba(0, 212, 255, 0.6);
+            animation: rainbowShift 3s linear infinite;
+        }
+
+        .footer-bottom-universe {
+            text-align: center;
+            padding-top: 5rem;
+            border-top: 2px solid var(--glass-border);
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .footer-bottom-universe p {
+            margin-bottom: 1.2rem;
+            font-size: 1.15rem;
+        }
+
+        .footer-heart-universe {
+            color: #f107a3;
+            animation: heartbeatUniverse 1.8s infinite;
+            display: inline-block;
+        }
+
+        @keyframes heartbeatUniverse {
+            0%, 100% { transform: scale(1); }
+            10%, 30% { transform: scale(1.25); }
+            20%, 40% { transform: scale(1); }
+        }
+
+        /* ============================================================
+           UNIVERSE BACK TO TOP
+           ============================================================ */
+        .back-to-top-universe {
+            position: fixed;
+            bottom: 70px;
+            right: 70px;
+            width: 90px;
+            height: 90px;
+            background: var(--cosmic-rainbow);
+            background-size: 200% auto;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            font-size: 2.5rem;
+            cursor: pointer;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 999;
+            box-shadow: 
+                0 25px 70px rgba(102, 126, 234, 0.8),
+                0 0 60px rgba(0, 212, 255, 0.6);
+            transition: all 0.8s var(--universe-bounce);
+            animation: rainbowShift 4s linear infinite;
+        }
+
+        .back-to-top-universe.visible {
+            display: flex;
+        }
+
+        .back-to-top-universe:hover {
+            transform: translateY(-20px) scale(1.3);
+            box-shadow: 
+                0 45px 110px rgba(102, 126, 234, 1),
+                0 0 90px rgba(0, 212, 255, 0.9);
+        }
+
+        /* ============================================================
+           SCROLL ANIMATIONS
+           ============================================================ */
+        .fade-in-universe {
+            opacity: 0;
+            transform: translateY(60px);
+            transition: opacity 1.5s var(--cosmic-ease),
+                        transform 1.5s var(--cosmic-ease);
+        }
+
+        .fade-in-universe.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ============================================================
+           RESPONSIVE DESIGN
+           ============================================================ */
+        @media (max-width: 1024px) {
+            .projects-grid-universe {
+                grid-template-columns: 1fr;
+            }
+
+            .cosmic-rings {
+                width: 800px;
+                height: 800px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .universe-nav {
+                width: 95%;
+                padding: 0.8rem 2rem;
+            }
+
+            .nav-menu-universe {
+                position: fixed;
+                top: 120px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 120px);
+                background: rgba(0, 0, 0, 0.98);
+                backdrop-filter: blur(30px);
+                flex-direction: column;
+                padding: 5rem;
+                transition: left 0.8s var(--cosmic-ease);
+                gap: 3rem;
+                align-items: flex-start;
+                border-top: 2px solid var(--glass-border);
+            }
+
+            .nav-menu-universe.active {
+                left: 0;
+            }
+
+            .menu-toggle-universe {
+                display: flex;
+            }
+
+            .menu-toggle-universe.active span:nth-child(1) {
+                transform: rotate(45deg) translate(10px, 10px);
+            }
+
+            .menu-toggle-universe.active span:nth-child(2) {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+
+            .menu-toggle-universe.active span:nth-child(3) {
+                                transform: rotate(-45deg) translate(10px, -10px);
+            }
+
+            .hero-title-universe {
+                font-size: clamp(3rem, 18vw, 8rem);
+            }
+
+            .hero-subtitle-universe {
+                font-size: clamp(1.5rem, 8vw, 3rem);
+            }
+
+            .hero-stats-universe {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 2.5rem;
+            }
+
+            .hero-buttons-universe {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .btn-universe {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .section-title-universe {
+                font-size: clamp(3rem, 12vw, 6rem);
+            }
+
+            .projects-grid-universe {
+                gap: 4rem;
+            }
+
+            .project-card-universe {
+                padding: 4rem;
+            }
+
+            .footer-grid-universe {
+                grid-template-columns: 1fr;
+                gap: 5rem;
+            }
+
+            .back-to-top-universe {
+                width: 75px;
+                height: 75px;
+                bottom: 50px;
+                right: 50px;
+                font-size: 2rem;
+            }
+
+            .cosmic-rings {
+                width: 600px;
+                height: 600px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-stats-universe {
+                grid-template-columns: 1fr;
+            }
+
+            .stat-card-universe {
+                padding: 3rem 2.5rem;
+            }
+
+            .stat-number-universe {
+                font-size: 4rem;
+            }
+
+            .section-label-universe::before,
+            .section-label-universe::after {
+                width: 50px;
+            }
+
+            .hero-socials-universe {
+                gap: 2rem;
+            }
+
+            .social-icon-universe {
+                width: 70px;
+                height: 70px;
+                font-size: 1.7rem;
+            }
+
+            .project-icon-universe {
+                font-size: 5rem;
+            }
+
+            .project-title-universe {
+                font-size: 2.5rem;
+            }
+
+            .projects-grid-universe {
+                grid-template-columns: 1fr;
+            }
+
+            .cosmic-rings {
+                width: 400px;
+                height: 400px;
+            }
+
+            .nebula-cloud {
+                width: 300px;
+                height: 300px;
+            }
+        }
+
+        /* ============================================================
+           ACCESSIBILITY
+           ============================================================ */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border-width: 0;
+        }
+
+        *:focus-visible {
+            outline: 4px solid #00d4ff;
+            outline-offset: 6px;
+            border-radius: 15px;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            *,
+            *::before,
+            *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+
+        /* ============================================================
+           PRINT STYLES
+           ============================================================ */
+        @media print {
+            .universe-nav,
+            .back-to-top-universe,
+            .cosmic-cursor,
+            .cursor-dot,
+            .cosmic-preloader,
+            .scroll-indicator-universe,
+            .starfield,
+            .nebula-cloud,
+            .cosmic-particles,
+            .cosmic-rings {
+                display: none !important;
+            }
+
+            body {
+                background: white;
+                color: black;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Cosmic Cursor -->
+    <div class="cosmic-cursor">
+        <div class="cursor-core"></div>
+    </div>
+    <div class="cursor-dot"></div>
+
+    <!-- Cosmic Preloader -->
+    <div class="cosmic-preloader">
+        <div class="universe-vortex">
+            <div class="vortex-ring"></div>
+            <div class="vortex-ring"></div>
+            <div class="vortex-ring"></div>
+            <div class="vortex-ring"></div>
+            <div class="vortex-ring"></div>
+            <div class="vortex-ring"></div>
+            <div class="universe-text">UNIVERSE</div>
+        </div>
+    </div>
+
+    <!-- Universe Navigation -->
+    <nav class="universe-nav">
+        <div class="nav-container-universe">
+            <a href="#home" class="nav-logo-universe">MKA</a>
+            <ul class="nav-menu-universe">
+                <li><a href="#home" class="nav-link-universe">Home</a></li>
+                <li><a href="#about" class="nav-link-universe">About</a></li>
+                <li><a href="#projects" class="nav-link-universe">Projects</a></li>
+                <li><a href="#contact" class="nav-link-universe">Contact</a></li>
+                <li><button class="theme-toggle-universe" onclick="toggleTheme()">
+                    <i class="fas fa-moon"></i>
+                </button></li>
+            </ul>
+            <div class="menu-toggle-universe" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Universe Hero Section -->
+    <section class="universe-hero" id="home">
+        <!-- Starfield Background -->
+        <div class="starfield" id="starfield"></div>
+
+        <!-- Nebula Clouds -->
+        <div class="nebula-cloud nebula-1"></div>
+        <div class="nebula-cloud nebula-2"></div>
+        <div class="nebula-cloud nebula-3"></div>
+
+        <!-- Cosmic Particles -->
+        <div class="cosmic-particles" id="cosmicParticles"></div>
+
+        <!-- Cosmic Rings -->
+        <div class="cosmic-rings">
+            <div class="cosmic-ring"></div>
+            <div class="cosmic-ring"></div>
+            <div class="cosmic-ring"></div>
+        </div>
+
+        <!-- Hero Content -->
+        <div class="hero-content-universe">
+            <div class="universe-badge">
+                <span class="badge-cosmic-pulse"></span>
+                <span>Universe • Ultimate • Beyond Limits</span>
+            </div>
+
+            <h1 class="hero-title-universe">
+                <span class="title-universe-3d" data-text="MOE KYAW AUNG">MOE KYAW AUNG</span>
+            </h1>
+
+            <p class="hero-subtitle-universe">
+                <span class="morphing-cosmic-text">Universe of Android Architecture</span>
+            </p>
+
+            <div class="hero-location-universe">
+                <i class="fas fa-map-marker-alt location-pin-universe"></i>
+                <span>Tachileik, Myanmar 🇲🇲 • Bangkok, Thailand 🇹🇭</span>
+            </div>
+
+            <p class="hero-desc-universe">
+                Transcending the boundaries of mobile development with cosmic-scale innovation. 
+                12+ years architecting the future of Android with revolutionary technologies 
+                that reshape reality. Where code becomes art, and apps become universes.
+            </p>
+
+            <!-- Universe Statistics -->
+            <div class="hero-stats-universe">
+                <div class="stat-card-universe">
+                    <span class="stat-number-universe" data-target="12">0</span>
+                    <span class="stat-label-universe">Years Universe</span>
+                </div>
+                <div class="stat-card-universe">
+                    <span class="stat-number-universe" data-target="3000">0</span>
+                    <span class="stat-label-universe">Apps Created</span>
+                </div>
+                <div class="stat-card-universe">
+                    <span class="stat-number-universe" data-target="122">0</span>
+                    <span class="stat-label-universe">Repositories</span>
+                </div>
+                <div class="stat-card-universe">
+                    <span class="stat-number-universe" data-target="100">0</span>
+                    <span class="stat-label-universe">% Transcendent</span>
+                </div>
+            </div>
+
+            <!-- Universe Buttons -->
+            <div class="hero-buttons-universe">
+                <a href="#contact" class="btn-universe btn-primary-universe">
+                    <span>Enter Universe</span>
+                    <i class="fas fa-rocket"></i>
+                </a>
+                <a href="#projects" class="btn-universe btn-secondary-universe">
+                    <span>Explore Cosmos</span>
+                    <i class="fas fa-star"></i>
+                </a>
+            </div>
+
+            <!-- Social Icons -->
+            <div class="hero-socials-universe">
+                <a href="https://github.com/Dev-moe-kyawaung" class="social-icon-universe" target="_blank" rel="noopener" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/moe-kyaw-aung-2653093a1" class="social-icon-universe" target="_blank" rel="noopener" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://gravatar.com/moekyawaung13721" class="social-icon-universe" target="_blank" rel="noopener" aria-label="Gravatar">
+                    <i class="fas fa-user-circle"></i>
+                </a>
+                <a href="mailto:moekyawaung@programmer.net" class="social-icon-universe" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="tel:+959889000889" class="social-icon-universe" aria-label="Phone">
+                    <i class="fas fa-phone"></i>
+                </a>
+                <a href="https://t.me/moekyawaung" class="social-icon-universe" target="_blank" rel="noopener" aria-label="Telegram">
+                    <i class="fab fa-telegram"></i>
+                </a>
+                <a href="https://www.instagram.com/moekyawaung" class="social-icon-universe" target="_blank" rel="noopener" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://play.google.com/store/apps/developer?id=Moe+Kyaw+Aung" class="social-icon-universe" target="_blank" rel="noopener" aria-label="Play Store">
+                    <i class="fab fa-google-play"></i>
+                </a>
+            </div>
+
+            <!-- Scroll Indicator -->
+            <div class="scroll-indicator-universe">
+                <span class="scroll-text-universe">Discover</span>
+                <div class="scroll-line-universe"></div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-sep-universe"></div>
+
+    <!-- Universe Projects Section -->
+    <section class="section-universe" id="projects">
+        <div class="section-label-universe">Cosmic Creations</div>
+        <h2 class="section-title-universe">Universe Projects</h2>
+        <p class="section-desc-universe">
+            Transcendent applications that redefine the boundaries of mobile development. 
+            Each project is a universe of innovation, crafted with revolutionary technologies 
+            and cosmic-scale architecture.
+        </p>
+
+        <div class="projects-grid-universe">
+            <div class="project-card-universe fade-in-universe">
+                <div class="project-icon-universe">🌌</div>
+                <h3 class="project-title-universe">Cosmic Dashboard</h3>
+                <p class="project-desc-universe">
+                    Universe-scale social platform with multiverse state management, quantum analytics, 
+                    and transcendent data visualization. Features neural AI, holographic UI, 
+                    and reality-bending user experiences that exist across dimensions.
+                </p>
+                <div class="project-tags-universe">
+                    <span class="project-tag-universe">Kotlin Multiverse</span>
+                    <span class="project-tag-universe">Quantum Compose</span>
+                    <span class="project-tag-universe">Neural AI</span>
+                    <span class="project-tag-universe">Holographic</span>
+                </div>
+                <a href="https://github.com/moekyawaung-tech/cosmic-dashboard" class="project-link-universe" target="_blank">
+                    <span>Enter Cosmos</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div class="project-card-universe fade-in-universe">
+                <div class="project-icon-universe">🪐</div>
+                <h3 class="project-title-universe">Nebula PWA</h3>
+                <p class="project-desc-universe">
+                    Transcendent Progressive Web Application with cosmic offline architecture, 
+                    stellar performance optimization, and dimensional service workers. Features 
+                    quantum caching, neural prefetching, and reality-shifting UI adaptations.
+                </p>
+                <div class="project-tags-universe">
+                    <span class="project-tag-universe">WebGPU Universe</span>
+                    <span class="project-tag-universe">Quantum Cache</span>
+                    <span class="project-tag-universe">Neural PWA</span>
+                    <span class="project-tag-universe">Cosmic UI</span>
+                </div>
+                <a href="https://github.com/moekyawaung-tech/nebula-pwa" class="project-link-universe" target="_blank">
+                    <span>Enter Cosmos</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div class="project-card-universe fade-in-universe">
+                <div class="project-icon-universe">🎮</div>
+                <h3 class="project-title-universe">Stellar Gaming</h3>
+                <p class="project-desc-universe">
+                    Revolutionary gaming platform with quantum physics simulation, neural AI opponents, 
+                    and multiversal multiplayer. Features real-time cosmic ray tracing, dimensional 
+                    haptics, and transcendent spatial audio that exists beyond reality.
+                </p>
+                <div class="project-tags-universe">
+                    <span class="project-tag-universe">Cosmic Ray Trace</span>
+                    <span class="project-tag-universe">Quantum Physics</span>
+                    <span class="project-tag-universe">Neural AI</span>
+                    <span class="project-tag-universe">Multiverse XR</span>
+                </div>
+                <a href="https://github.com/moekyawaung-tech/stellar-gaming" class="project-link-universe" target="_blank">
+                    <span>Enter Cosmos</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div class="project-card-universe fade-in-universe">
+                <div class="project-icon-universe">🎯</div>
+                <h3 class="project-title-universe">HoloVision Ultra</h3>
+                <p class="project-desc-universe">
+                    Next-universe video player with holographic rendering, neural enhancement AI, 
+                    16K HDR streaming, and quantum codec optimization. Features dimensional audio, 
+                    reality-warping effects, and cosmic-scale buffer management.
+                </p>
+                <div class="project-tags-universe">
+                    <span class="project-tag-universe">16K HDR Ultra</span>
+                    <span class="project-tag-universe">Neural Codec</span>
+                    <span class="project-tag-universe">Quantum Buffer</span>
+                    <span class="project-tag-universe">Holo Render</span>
+                </div>
+                <a href="https://github.com/moekyawaung-tech/holovision" class="project-link-universe" target="_blank">
+                    <span>Enter Cosmos</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div class="project-card-universe fade-in-universe">
+                <div class="project-icon-universe">💼</div>
+                <h3 class="project-title-universe">Universe Careers</h3>
+                <p class="project-desc-universe">
+                    Transcendent job marketplace with quantum AI matching, neural skill graphs, 
+                    and holographic interview platform. Features predictive cosmic analytics, 
+                    blockchain verification, and multiversal workspace previews.
+                </p>
+                <div class="project-tags-universe">
+                    <span class="project-tag-universe">Quantum Match</span>
+                    <span class="project-tag-universe">Cosmic Chain</span>
+                    <span class="project-tag-universe">Neural Graph</span>
+                    <span class="project-tag-universe">Holo Interview</span>
+                </div>
+                <a href="https://github.com/moekyawaung-tech/universe-careers" class="project-link-universe" target="_blank">
+                    <span>Enter Cosmos</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div class="project-card-universe fade-in-universe">
+                <div class="project-icon-universe">💎</div>
+                <h3 class="project-title-universe">Cosmic Commerce</h3>
+                <p class="project-desc-universe">
+                    Revolutionary POS system with quantum inventory prediction, neural financial AI, 
+                    holographic analytics dashboard, and cosmic-scale transaction processing. 
+                    Features multiversal payment systems and reality-transcendent security.
+                </p>
+                <div class="project-tags-universe">
+                    <span class="project-tag-universe">Quantum Predict</span>
+                    <span class="project-tag-universe">Cosmic Chain</span>
+                    <span class="project-tag-universe">Neural Finance</span>
+                    <span class="project-tag-universe">Holo Analytics</span>
+                </div>
+                <a href="https://github.com/moekyawaung-tech/cosmic-commerce" class="project-link-universe" target="_blank">
+                    <span>Enter Cosmos</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 8rem;" class="fade-in-universe">
+            <a href="https://github.com/Dev-moe-kyawaung" class="btn-universe btn-primary-universe" target="_blank">
+                <span>Explore All Universes</span>
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+    </section>
+
+    <div class="section-sep-universe"></div>
+
+    <!-- Contact Section -->
+    <section class="section-universe" id="contact">
+        <div class="section-label-universe">Connect Across Dimensions</div>
+        <h2 class="section-title-universe">Enter My Universe</h2>
+        <p class="section-desc-universe">
+            Ready to transcend the boundaries of possibility? Let's collaborate across dimensions 
+            and create revolutionary solutions that reshape the multiverse of mobile development.
+        </p>
+
+        <div style="text-align: center; margin-top: 6rem;" class="fade-in-universe">
+            <div class="hero-buttons-universe" style="animation: none;">
+                <a href="mailto:moekyawaung@programmer.net" class="btn-universe btn-primary-universe">
+                    <span>Transmit Message</span>
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="tel:+959889000889" class="btn-universe btn-secondary-universe">
+                    <span>Cosmic Call</span>
+                    <i class="fas fa-phone"></i>
+                </a>
+            </div>
+
+            <div style="margin-top: 6rem;">
+                <p style="color: rgba(255, 255, 255, 0.85); font-size: 1.3rem; margin-bottom: 2rem;">
+                    📞 +95 9 889 000 889 • +95 9 666 000 050
+                </p>
+                <p style="color: rgba(255, 255, 255, 0.85); font-size: 1.3rem; margin-bottom: 2rem;">
+                    📧 moekyawaung@programmer.net • moekyawaung@technologist.com
+                </p>
+                <p style="color: rgba(255, 255, 255, 0.85); font-size: 1.3rem;">
+                    📍 Tachileik, Myanmar 🇲🇲 • Bangkok, Thailand 🇹🇭
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Universe Footer -->
+    <footer class="footer-universe">
+        <div class="footer-grid-universe">
+            <div class="footer-column-universe fade-in-universe">
+                <h4>MOE KYAW AUNG</h4>
+                <p>
+                    Universe of Android Architecture. Transcending boundaries with 12+ years of 
+                    revolutionary mobile development. Creating cosmic-scale applications that 
+                    reshape reality and redefine possibilities across the multiverse.
+                </p>
+                <div class="footer-socials-universe">
+                    <a href="https://github.com/Dev-moe-kyawaung" class="footer-social-icon-universe" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/moe-kyaw-aung-2653093a1" class="footer-social-icon-universe" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://t.me/moekyawaung" class="footer-social-icon-universe" target="_blank" aria-label="Telegram">
+                        <i class="fab fa-telegram"></i>
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCuTXUguZb4xjeL2nX8WJG" class="footer-social-icon-universe" target="_blank" aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="https://www.instagram.com/moekyawaung" class="footer-social-icon-universe" target="_blank" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://gravatar.com/moekyawaung13721" class="footer-social-icon-universe" target="_blank" aria-label="Gravatar">
+                        <i class="fas fa-user-circle"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-column-universe fade-in-universe">
+                <h4>Navigation</h4>
+                <ul class="footer-links-universe">
+                    <li><a href="#home"><i class="fas fa-chevron-right"></i> Home Universe</a></li>
+                    <li><a href="#about"><i class="fas fa-chevron-right"></i> About Cosmos</a></li>
+                    <li><a href="#projects"><i class="fas fa-chevron-right"></i> Projects Galaxy</a></li>
+                    <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact Dimension</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column-universe fade-in-universe">
+                <h4>Cosmic Expertise</h4>
+                <ul class="footer-links-universe">
+                    <li><a href="#projects"><i class="fas fa-chevron-right"></i> Universe Architecture</a></li>
+                    <li><a href="#projects"><i class="fas fa-chevron-right"></i> Quantum Development</a></li>
+                    <li><a href="#projects"><i class="fas fa-chevron-right"></i> Neural Networks</a></li>
+                    <li><a href="#projects"><i class="fas fa-chevron-right"></i> Holographic UI</a></li>
+                    <li><a href="#projects"><i class="fas fa-chevron-right"></i> Multiverse Systems</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column-universe fade-in-universe">
+                <h4>Resources</h4>
+                <ul class="footer-links-universe">
+                    <li><a href="https://dev-moe-kyawaung.github.io/Moekyawaung-Certificates/" target="_blank"><i class="fas fa-chevron-right"></i> Cosmic Certificates (82+)</a></li>
+                    <li><a href="https://github.com/Dev-moe-kyawaung" target="_blank"><i class="fas fa-chevron-right"></i> GitHub Universe</a></li>
+                    <li><a href="#projects"><i class="fas fa-chevron-right"></i> Portfolio Cosmos</a></li>
+                    <li><a href="#contact"><i class="fas fa-chevron-right"></i> Connect Dimensions</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom-universe">
+            <p>&copy; 2026 Moe Kyaw Aung. All universes reserved.</p>
+            <p>Crafted with <span class="footer-heart-universe">♥</span> across infinite dimensions in Myanmar 🇲🇲</p>
+            <p>Universe of Android Architecture • Quantum Developer • Cosmic Pioneer • Beyond Reality</p>
+        </div>
+    </footer>
+
+    <!-- Universe Back to Top -->
+    <button class="back-to-top-universe" onclick="scrollToTop()" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script>
+        // ============================================================
+        // UNIVERSE INITIALIZATION
+        // ============================================================
+        console.log('%c🌌 UNIVERSE OF PORTFOLIO', 'color: #00d4ff; font-size: 50px; font-weight: 900; text-shadow: 0 0 30px rgba(0, 212, 255, 1);');
+        console.log('%c⭐ Version 6.0 - ULTIMATE EDITION', 'color: #f107a3; font-size: 28px; font-weight: 800;');
+        console.log('%c🚀 Beyond Reality • Transcendent Design • Cosmic Innovation', 'color: #00ffa3; font-size: 20px;');
+        console.log('%c📧 Contact: moekyawaung@programmer.net', 'color: #ffd700; font-size: 18px;');
+        console.log('%c🔗 GitHub: https://github.com/Dev-moe-kyawaung', 'color: #00d4ff; font-size: 18px;');
+
+        // ============================================================
+        // COSMIC PRELOADER
+        // ============================================================
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                document.querySelector('.cosmic-preloader').classList.add('hidden');
+                initUniverseEffects();
+            }, 3000);
+        });
+
+        // ============================================================
+        // COSMIC CURSOR
+        // ============================================================
+        const cosmicCursor = document.querySelector('.cosmic-cursor');
+        const cursorDot = document.querySelector('.cursor-dot');
+
+        let mouseX = 0, mouseY = 0;
+        let cursorX = 0, cursorY = 0;
+        let dotX = 0, dotY = 0;
+
+        document.addEventListener('mousemove', (e) => {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+        });
+
+        function animateCosmicCursor() {
+            cursorX += (mouseX - cursorX) * 0.12;
+            cursorY += (mouseY - cursorY) * 0.12;
+            
+            dotX += (mouseX - dotX) * 0.3;
+            dotY += (mouseY - dotY) * 0.3;
+
+            cosmicCursor.style.left = cursorX + 'px';
+            cosmicCursor.style.top = cursorY + 'px';
+            
+            cursorDot.style.left = dotX + 'px';
+            cursorDot.style.top = dotY + 'px';
+
+            requestAnimationFrame(animateCosmicCursor);
+        }
+
+        animateCosmicCursor();
+
+        // Cursor interactions
+        const interactiveElements = document.querySelectorAll('a, button, .project-card-universe, .stat-card-universe');
+        interactiveElements.forEach(element => {
+            element.addEventListener('mouseenter', () => {
+                cosmicCursor.classList.add('active');
+                cursorDot.classList.add('active');
+            });
+            element.addEventListener('mouseleave', () => {
+                cosmicCursor.classList.remove('active');
+                cursorDot.classList.remove('active');
+            });
+        });
+
+        // ============================================================
+        // UNIVERSE NAVIGATION
+        // ============================================================
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.universe-nav');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        function toggleMenu() {
+            const navMenu = document.querySelector('.nav-menu-universe');
+            const menuToggle = document.querySelector('.menu-toggle-universe');
+            navMenu.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        }
+
+        // Close mobile menu on link click
+        document.querySelectorAll('.nav-link-universe').forEach(link => {
+            link.addEventListener('click', () => {
+                const navMenu = document.querySelector('.nav-menu-universe');
+                const menuToggle = document.querySelector('.menu-toggle-universe');
+                navMenu.classList.remove('active');
+                menuToggle.classList.remove('active');
+            });
+        });
+
+        // ============================================================
+        // SMOOTH SCROLL
+        // ============================================================
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // ============================================================
+        // UNIVERSE COUNTER ANIMATION
+        // ============================================================
+        function animateUniverseCounter(element) {
+            const target = parseInt(element.getAttribute('data-target'));
+            const duration = 3500;
+            const increment = target / (duration / 16);
+            let current = 0;
+
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                                        element.textContent = target + (element.textContent.includes('%') ? '%' : '+');
+                    clearInterval(timer);
+                } else {
+                    element.textContent = Math.floor(current) + (element.textContent.includes('%') ? '%' : '+');
+                }
+            }, 16);
+        }
+
+        // ============================================================
+        // UNIVERSE SCROLL ANIMATIONS
+        // ============================================================
+        const scrollObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    
+                    // Trigger counters
+                    if (entry.target.querySelector('[data-target]')) {
+                        entry.target.querySelectorAll('[data-target]').forEach(counter => {
+                            animateUniverseCounter(counter);
+                        });
+                    }
+                }
+            });
+        }, {
+            threshold: 0.15,
+            rootMargin: '0px 0px -120px 0px'
+        });
+
+        document.querySelectorAll('.fade-in-universe').forEach(element => {
+            scrollObserver.observe(element);
+        });
+
+        // Counter observer
+        const counterObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateUniverseCounter(entry.target);
+                    counterObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        document.querySelectorAll('[data-target]').forEach(counter => {
+            counterObserver.observe(counter);
+        });
+
+        // ============================================================
+        // THEME TOGGLE
+        // ============================================================
+        function toggleTheme() {
+            document.body.classList.toggle('light-mode');
+            const themeBtn = document.querySelector('.theme-toggle-universe i');
+            
+            if (document.body.classList.contains('light-mode')) {
+                themeBtn.classList.remove('fa-moon');
+                themeBtn.classList.add('fa-sun');
+                localStorage.setItem('theme-universe', 'light');
+            } else {
+                themeBtn.classList.remove('fa-sun');
+                themeBtn.classList.add('fa-moon');
+                localStorage.setItem('theme-universe', 'dark');
+            }
+        }
+
+        // Load saved theme
+        const savedTheme = localStorage.getItem('theme-universe');
+        if (savedTheme === 'light') {
+            document.body.classList.add('light-mode');
+            document.querySelector('.theme-toggle-universe i').classList.replace('fa-moon', 'fa-sun');
+        }
+
+        // ============================================================
+        // BACK TO TOP BUTTON
+        // ============================================================
+        window.addEventListener('scroll', function() {
+            const backToTop = document.querySelector('.back-to-top-universe');
+            if (window.scrollY > 700) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+        });
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        // ============================================================
+        // UNIVERSE EFFECTS - Starfield & Particles
+        // ============================================================
+        function initUniverseEffects() {
+            // Create starfield
+            const starfield = document.getElementById('starfield');
+            if (starfield) {
+                for (let i = 0; i < 200; i++) {
+                    const star = document.createElement('div');
+                    star.className = 'star';
+                    star.style.left = Math.random() * 100 + '%';
+                    star.style.top = Math.random() * 100 + '%';
+                    star.style.animationDelay = Math.random() * 3 + 's';
+                    star.style.opacity = Math.random() * 0.7 + 0.3;
+                    starfield.appendChild(star);
+                }
+            }
+
+            // Create cosmic particles
+            const particlesContainer = document.getElementById('cosmicParticles');
+            if (particlesContainer) {
+                for (let i = 0; i < 150; i++) {
+                    const particle = document.createElement('div');
+                    particle.className = 'cosmic-particle';
+                    particle.style.left = Math.random() * 100 + '%';
+                    particle.style.animationDelay = Math.random() * 20 + 's';
+                    particle.style.animationDuration = (15 + Math.random() * 15) + 's';
+                    particlesContainer.appendChild(particle);
+                }
+            }
+        }
+
+        // ============================================================
+        // 
+        // 3D CARD TILT EFFECT
+        // ============================================================
+        const cards3D = document.querySelectorAll('.project-card-universe, .stat-card-universe');
+        cards3D.forEach(card => {
+            card.addEventListener('mousemove', function(e) {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                
+                const centerX = rect.width / 2;
+                const centerY = rect.height / 2;
+                
+                const rotateX = (y - centerY) / 12;
+                const rotateY = (centerX - x) / 12;
+                
+                card.style.transform = `perspective(2000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-30px) scale(1.05)`;
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                card.style.transform = '';
+            });
+        });
+
+        // ============================================================
+        // PERFORMANCE MONITORING
+        // ============================================================
+        if (window.performance && window.performance.timing) {
+            window.addEventListener('load', function() {
+                setTimeout(() => {
+                    const perfData = window.performance.timing;
+                    const pageLoadTime = perfData.loadEventEnd - perfData.navigationStart;
+                    console.log(`%c⚡ Universe Load Time: ${pageLoadTime}ms`, 'color: #00ffa3; font-size: 18px; font-weight: bold;');
+                }, 0);
+            });
+        }
+
+        // ============================================================
+        // ACCESSIBILITY
+        // ============================================================
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                const navMenu = document.querySelector('.nav-menu-universe');
+                const menuToggle = document.querySelector('.menu-toggle-universe');
+                if (navMenu.classList.contains('active')) {
+                    navMenu.classList.remove('active');
+                    menuToggle.classList.remove('active');
+                }
+            }
+        });
+
+        // Announce section changes
+        const sections = document.querySelectorAll('section[id]');
+        const announcer = document.createElement('div');
+        announcer.setAttribute('role', 'status');
+        announcer.setAttribute('aria-live', 'polite');
+        announcer.className = 'sr-only';
+        document.body.appendChild(announcer);
+
+        const sectionObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const sectionTitle = entry.target.querySelector('h2');
+                    if (sectionTitle) {
+                        announcer.textContent = `Now viewing: ${sectionTitle.textContent}`;
+                    }
+                }
+            });
+        }, { threshold: 0.5 });
+
+        sections.forEach(section => {
+            sectionObserver.observe(section);
+        });
+
+        // ============================================================
+        // PARALLAX NEBULA EFFECT
+        // ============================================================
+        window.addEventListener('scroll', function() {
+            const scrolled = window.pageYOffset;
+            const nebulaClouds = document.querySelectorAll('.nebula-cloud');
+            
+            nebulaClouds.forEach((nebula, index) => {
+                const speed = 0.2 + (index * 0.15);
+                nebula.style.transform = `translateY(${scrolled * speed}px)`;
+            });
+
+            // Cosmic rings parallax
+            const cosmicRings = document.querySelectorAll('.cosmic-ring');
+            cosmicRings.forEach((ring, index) => {
+                const speed = 0.1 + (index * 0.05);
+                const currentRotation = (scrolled * speed) % 360;
+                ring.style.transform = `translate(-50%, -50%) rotate(${currentRotation}deg)`;
+            });
+        });
+
+        // ============================================================
+        // DEVICE DETECTION & OPTIMIZATION
+        // ============================================================
+        const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+        const isTablet = /(tablet|ipad|playbook|silk)|(android(?!.*mobi))/i.test(navigator.userAgent);
+
+        if (isMobile || isTablet) {
+            // Disable custom cursor on touch devices
+            document.querySelector('.cosmic-cursor').style.display = 'none';
+            document.querySelector('.cursor-dot').style.display = 'none';
+            
+            // Reduce particle count
+            console.log('%c📱 Mobile optimization activated', 'color: #00ffa3; font-size: 14px;');
+        }
+
+        // ============================================================
+        // KEYBOARD SHORTCUTS
+        // ============================================================
+        document.addEventListener('keydown', function(e) {
+            // Ctrl/Cmd + K = Quick navigation
+            if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
+                e.preventDefault();
+                console.log('Quick nav shortcut');
+            }
+            
+            // H = Home
+            if (e.key === 'h' && !e.ctrlKey && !e.metaKey) {
+                document.querySelector('#home').scrollIntoView({ behavior: 'smooth' });
+            }
+            
+            // P = Projects
+            if (e.key === 'p' && !e.ctrlKey && !e.metaKey) {
+                document.querySelector('#projects').scrollIntoView({ behavior: 'smooth' });
+            }
+            
+            // C = Contact
+            if (e.key === 'c' && !e.ctrlKey && !e.metaKey) {
+                document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+
+        // ============================================================
+        // EASTER EGG - KONAMI CODE
+        // ============================================================
+        let konamiCode = [];
+        const konamiSequence = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
+
+        document.addEventListener('keydown', function(e) {
+            konamiCode.push(e.key);
+            konamiCode = konamiCode.slice(-10);
+            
+            if (konamiCode.join(',') === konamiSequence.join(',')) {
+                console.log('%c🎮 UNIVERSE MODE ACTIVATED! 🎮', 'color: #ffd700; font-size: 30px; font-weight: 900; text-shadow: 0 0 30px rgba(255, 215, 0, 1);');
+                document.body.style.animation = 'universeRainbow 3s linear infinite';
+                setTimeout(() => {
+                    document.body.style.animation = '';
+                }, 10000);
+            }
+        });
+
+        // Add universe rainbow animation
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes universeRainbow {
+                0% { filter: hue-rotate(0deg); }
+                100% { filter: hue-rotate(360deg); }
+            }
+        `;
+        document.head.appendChild(style);
+
+        // ============================================================
+        // LAZY LOAD OPTIMIZATION
+        // ============================================================
+        if ('IntersectionObserver' in window) {
+            const imageObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const img = entry.target;
+                        if (img.dataset.src) {
+                            img.src = img.dataset.src;
+                            img.removeAttribute('data-src');
+                            imageObserver.unobserve(img);
+                        }
+                    }
+                });
+            });
+
+            document.querySelectorAll('img[data-src]').forEach(img => {
+                imageObserver.observe(img);
+            });
+        }
+
+        // ============================================================
+        // COSMIC RIPPLE EFFECT ON CLICK
+        // ============================================================
+        document.addEventListener('click', function(e) {
+            const ripple = document.createElement('div');
+            ripple.style.position = 'fixed';
+            ripple.style.left = e.clientX + 'px';
+            ripple.style.top = e.clientY + 'px';
+            ripple.style.width = '20px';
+            ripple.style.height = '20px';
+            ripple.style.borderRadius = '50%';
+            ripple.style.background = 'radial-gradient(circle, rgba(0, 212, 255, 0.8), transparent)';
+            ripple.style.transform = 'translate(-50%, -50%)';
+            ripple.style.pointerEvents = 'none';
+            ripple.style.zIndex = '9998';
+            ripple.style.animation = 'rippleExpand 1s ease-out forwards';
+            
+            document.body.appendChild(ripple);
+            
+            setTimeout(() => {
+                ripple.remove();
+            }, 1000);
+        });
+
+        // Add ripple animation
+        const rippleStyle = document.createElement('style');
+        rippleStyle.textContent = `
+            @keyframes rippleExpand {
+                0% {
+                    width: 20px;
+                    height: 20px;
+                    opacity: 1;
+                }
+                100% {
+                    width: 200px;
+                    height: 200px;
+                    opacity: 0;
+                }
+            }
+        `;
+        document.head.appendChild(rippleStyle);
+
+        // ============================================================
+        // UNIVERSE STATS ANIMATION
+        // ============================================================
+        const statCards = document.querySelectorAll('.stat-card-universe');
+        statCards.forEach((card, index) => {
+            card.style.animationDelay = `${index * 0.15}s`;
+        });
+
+        // ============================================================
+        // COSMIC CONSOLE ART
+        // ============================================================
+        console.log(`
+        ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣤⣴⣶⣶⣶⣶⣶⣶⣤⣤⣀⠀⠀⠀⠀⠀⠀⠀
+        ⠀⠀⠀⠀⠀⠀⠀⣀⣤⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⣤⡀⠀⠀⠀
+        ⠀⠀⠀⠀⠀⣠⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣦⡀⠀
+        ⠀⠀⠀⢀⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⡀
+        ⠀⠀⠀⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣇
+        ⠀⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+        ⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+        ⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+        ⠀⠀⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡟
+        ⠀⠀⠘⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠃
+        ⠀⠀⠀⠹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠏⠀
+        ⠀⠀⠀⠀⠙⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠋⠀⠀
+        ⠀⠀⠀⠀⠀⠀⠙⠻⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠟⠋⠀⠀⠀⠀
+        ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠛⠛⠿⠿⠿⠿⠿⠿⠛⠛⠉⠁⠀⠀⠀⠀⠀⠀⠀
+        
+        🌌 UNIVERSE OF PORTFOLIO 🌌
+        Moe Kyaw Aung - Ultimate Edition
+        `);
+
+        // ============================================================
+        // INITIALIZE ALL FEATURES
+        // ============================================================
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('%c✅ Universe Portfolio V6 Initialized', 'color: #00ffa3; font-size: 16px; font-weight: bold;');
+            
+            // Add stagger animation to sections
+            const allSections = document.querySelectorAll('.section-universe');
+            allSections.forEach(section => {
+                section.style.opacity = '0';
+                section.style.transform = 'translateY(50px)';
+            });
+            
+            // Initialize animations after delay
+            setTimeout(() => {
+                allSections.forEach(section => {
+                    scrollObserver.observe(section);
+                });
+            }, 100);
+        });
+
+        // ============================================================
+        // FPS COUNTER (Development Only)
+        // ============================================================
+        let lastTime = performance.now();
+        let frames = 0;
+        let fps = 0;
+
+        function calculateFPS() {
+            const currentTime = performance.now();
+            frames++;
+            
+            if (currentTime >= lastTime + 1000) {
+                fps = Math.round((frames * 1000) / (currentTime - lastTime));
+                frames = 0;
+                lastTime = currentTime;
+                
+                // Log FPS in development
+                if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+                    console.log(`%cFPS: ${fps}`, 'color: #00ffa3; font-size: 12px;');
+                }
+            }
+            
+            requestAnimationFrame(calculateFPS);
+        }
+
+        // Start FPS counter
+        calculateFPS();
+
+        // ============================================================
+        // COSMIC WELCOME MESSAGE
+        // ============================================================
+        setTimeout(() => {
+            console.log('%c👋 Welcome to the Universe!', 'color: #00d4ff; font-size: 24px; font-weight: bold;');
+            console.log('%c🌟 Keyboard shortcuts:', 'color: #f107a3; font-size: 16px;');
+            console.log('%c  H - Home', 'color: #00ffa3; font-size: 14px;');
+            console.log('%c  P - Projects', 'color: #00ffa3; font-size: 14px;');
+            console.log('%c  C - Contact', 'color: #00ffa3; font-size: 14px;');
+            console.log('%c  ESC - Close menu', 'color: #00ffa3; font-size: 14px;');
+            console.log('%c🎮 Try the Konami Code for a surprise!', 'color: #ffd700; font-size: 14px;');
+        }, 4000);
+    </script>
+</body>
+</html>
+
+
+
